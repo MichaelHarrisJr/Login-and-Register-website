@@ -1,0 +1,509 @@
+[debug] [2020-05-04T04:13:11.997Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T04:13:11.999Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-04T04:13:11.999Z] CLI Version:   8.2.0
+[debug] [2020-05-04T04:13:11.999Z] Platform:      win32
+[debug] [2020-05-04T04:13:11.999Z] Node Version:  v12.16.3
+[debug] [2020-05-04T04:13:12.000Z] Time:          Mon May 04 2020 00:13:11 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-04T04:13:12.000Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T04:13:12.000Z] 
+[debug] [2020-05-04T04:13:12.005Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-04T04:13:12.006Z] > authorizing via signed-in user
+[debug] [2020-05-04T04:13:12.006Z] [iam] checking project medplus-new for permissions ["firebase.projects.get"]
+[debug] [2020-05-04T04:13:12.008Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/medplus-new:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-04T04:13:12.145Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 04:13:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=30","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T04:13:12.148Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new  
+ 
+[debug] [2020-05-04T04:13:12.404Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 04:13:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions'...
+[info] 
+[debug] [2020-05-04T04:13:12.410Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new/webApps/-/config  
+ 
+[debug] [2020-05-04T04:13:12.781Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 04:13:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions" for Cloud Functions...
+[debug] [2020-05-04T04:13:14.459Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T04:13:14.459Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-04T04:13:14.459Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T04:13:14.460Z] [worker-~diagnostic~-9086097f-4c9a-40ee-8d62-16c10d4b4395]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\1432 
+[debug] [2020-05-04T04:13:14.460Z] [worker-~diagnostic~-9086097f-4c9a-40ee-8d62-16c10d4b4395]: BUSY 
+[debug] [2020-05-04T04:13:14.724Z] [runtime-status] [1432] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T04:13:14.724Z] [runtime-status] [1432] Disabled runtime features: undefined 
+[debug] [2020-05-04T04:13:14.728Z] [runtime-status] [1432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T04:13:14.730Z] [runtime-status] [1432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T04:13:14.731Z] [runtime-status] [1432] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T04:13:14.778Z] [runtime-status] [1432] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T04:13:14.778Z] [runtime-status] [1432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T04:13:14.779Z] [runtime-status] [1432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T04:13:14.780Z] [runtime-status] [1432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T04:13:14.780Z] [runtime-status] [1432] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T04:13:14.781Z] [runtime-status] [1432] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[info] +  functions[addAdminRole]: http function initialized (http://localhost:5001/medplus-new/us-central1/addAdminRole).
+[debug] [2020-05-04T04:13:14.784Z] [worker-~diagnostic~-9086097f-4c9a-40ee-8d62-16c10d4b4395]: IDLE 
+[debug] [2020-05-04T05:13:07.290Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T05:13:07.291Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-04T05:13:07.292Z] CLI Version:   8.2.0
+[debug] [2020-05-04T05:13:07.292Z] Platform:      win32
+[debug] [2020-05-04T05:13:07.292Z] Node Version:  v12.16.3
+[debug] [2020-05-04T05:13:07.292Z] Time:          Mon May 04 2020 01:13:07 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-04T05:13:07.292Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T05:13:07.292Z] 
+[debug] [2020-05-04T05:13:07.298Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-04T05:13:07.298Z] > authorizing via signed-in user
+[debug] [2020-05-04T05:13:07.298Z] [iam] checking project medplus-new for permissions ["firebase.projects.get"]
+[debug] [2020-05-04T05:13:07.301Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-04T05:13:07.301Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-04T05:13:07.462Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 05:13:06 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T05:13:07.473Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/medplus-new:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-04T05:13:07.645Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 05:13:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=44","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T05:13:07.646Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new  
+ 
+[debug] [2020-05-04T05:13:07.926Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 05:13:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions'...
+[info] 
+[debug] [2020-05-04T05:13:07.937Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new/webApps/-/config  
+ 
+[debug] [2020-05-04T05:13:08.511Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 05:13:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions" for Cloud Functions...
+[debug] [2020-05-04T05:13:09.985Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T05:13:09.985Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-04T05:13:09.985Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T05:13:09.985Z] [worker-~diagnostic~-ea47bd8d-3a0f-42a2-9c31-3f5587f74686]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\5352 
+[debug] [2020-05-04T05:13:09.986Z] [worker-~diagnostic~-ea47bd8d-3a0f-42a2-9c31-3f5587f74686]: BUSY 
+[debug] [2020-05-04T05:13:10.272Z] [runtime-status] [5352] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T05:13:10.273Z] [runtime-status] [5352] Disabled runtime features: undefined 
+[debug] [2020-05-04T05:13:10.277Z] [runtime-status] [5352] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T05:13:10.278Z] [runtime-status] [5352] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:13:10.279Z] [runtime-status] [5352] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T05:13:10.308Z] [runtime-status] [5352] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T05:13:10.308Z] [runtime-status] [5352] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:13:10.309Z] [runtime-status] [5352] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T05:13:10.309Z] [runtime-status] [5352] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:13:10.309Z] [runtime-status] [5352] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T05:13:10.311Z] [runtime-status] [5352] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[info] +  functions[addAdminRole]: http function initialized (http://localhost:5001/medplus-new/us-central1/addAdminRole).
+[debug] [2020-05-04T05:13:10.312Z] [worker-~diagnostic~-ea47bd8d-3a0f-42a2-9c31-3f5587f74686]: IDLE 
+[debug] [2020-05-04T05:47:35.142Z] File C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\index.js changed, reloading triggers 
+[debug] [2020-05-04T05:47:36.145Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-04T05:47:36.145Z] [worker-~diagnostic~-ea47bd8d-3a0f-42a2-9c31-3f5587f74686]: FINISHING 
+[debug] [2020-05-04T05:47:36.158Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T05:47:36.159Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-04T05:47:36.159Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T05:47:36.159Z] [worker-~diagnostic~-bf58a9cb-6006-45e2-9e5c-3280cff24391]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\12748 
+[debug] [2020-05-04T05:47:36.159Z] [worker-~diagnostic~-bf58a9cb-6006-45e2-9e5c-3280cff24391]: BUSY 
+[debug] [2020-05-04T05:47:36.161Z] [worker-~diagnostic~-ea47bd8d-3a0f-42a2-9c31-3f5587f74686]: exited 
+[debug] [2020-05-04T05:47:36.161Z] [worker-~diagnostic~-ea47bd8d-3a0f-42a2-9c31-3f5587f74686]: FINISHED 
+[debug] [2020-05-04T05:47:36.455Z] [runtime-status] [12748] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T05:47:36.457Z] [runtime-status] [12748] Disabled runtime features: undefined 
+[debug] [2020-05-04T05:47:36.461Z] [runtime-status] [12748] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T05:47:36.462Z] [runtime-status] [12748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:47:36.464Z] [runtime-status] [12748] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T05:47:36.497Z] [runtime-status] [12748] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T05:47:36.498Z] [runtime-status] [12748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:47:36.499Z] [runtime-status] [12748] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T05:47:36.500Z] [runtime-status] [12748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:47:36.500Z] [runtime-status] [12748] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  ReferenceError: document is not defined
+    at Object.<anonymous> (C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:1133:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1153:10)
+    at Module.load (internal/modules/cjs/loader.js:977:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:877:14)
+    at Module.require (internal/modules/cjs/loader.js:1019:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:661:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-05-04T05:47:36.521Z] [worker-~diagnostic~-bf58a9cb-6006-45e2-9e5c-3280cff24391]: exited 
+[debug] [2020-05-04T05:47:36.521Z] [worker-~diagnostic~-bf58a9cb-6006-45e2-9e5c-3280cff24391]: FINISHED 
+[debug] [2020-05-04T05:58:54.556Z] File C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\index.js changed, reloading triggers 
+[debug] [2020-05-04T05:58:55.557Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0 
+[debug] [2020-05-04T05:58:55.570Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T05:58:55.570Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-04T05:58:55.570Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T05:58:55.571Z] [worker-~diagnostic~-4607f38c-4732-443f-896e-a7d139d761bc]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\4748 
+[debug] [2020-05-04T05:58:55.571Z] [worker-~diagnostic~-4607f38c-4732-443f-896e-a7d139d761bc]: BUSY 
+[debug] [2020-05-04T05:58:55.850Z] [runtime-status] [4748] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T05:58:55.852Z] [runtime-status] [4748] Disabled runtime features: undefined 
+[debug] [2020-05-04T05:58:55.856Z] [runtime-status] [4748] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T05:58:55.857Z] [runtime-status] [4748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:58:55.858Z] [runtime-status] [4748] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T05:58:55.889Z] [runtime-status] [4748] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T05:58:55.889Z] [runtime-status] [4748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:58:55.890Z] [runtime-status] [4748] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T05:58:55.891Z] [runtime-status] [4748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T05:58:55.891Z] [runtime-status] [4748] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T05:58:55.892Z] [runtime-status] [4748] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[debug] [2020-05-04T05:58:55.893Z] [worker-~diagnostic~-4607f38c-4732-443f-896e-a7d139d761bc]: IDLE 
+[debug] [2020-05-04T06:28:03.674Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T06:28:03.676Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-04T06:28:03.676Z] CLI Version:   8.2.0
+[debug] [2020-05-04T06:28:03.676Z] Platform:      win32
+[debug] [2020-05-04T06:28:03.676Z] Node Version:  v12.16.3
+[debug] [2020-05-04T06:28:03.677Z] Time:          Mon May 04 2020 02:28:03 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-04T06:28:03.677Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T06:28:03.677Z] 
+[debug] [2020-05-04T06:28:03.682Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-04T06:28:03.682Z] > authorizing via signed-in user
+[debug] [2020-05-04T06:28:03.683Z] [iam] checking project medplus-new for permissions ["firebase.projects.get"]
+[debug] [2020-05-04T06:28:03.685Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-04T06:28:03.685Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-04T06:28:03.866Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 06:28:03 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T06:28:03.877Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/medplus-new:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-04T06:28:04.088Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 06:28:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=71","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T06:28:04.091Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new  
+ 
+[debug] [2020-05-04T06:28:04.375Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 06:28:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions'...
+[info] 
+[debug] [2020-05-04T06:28:04.390Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new/webApps/-/config  
+ 
+[debug] [2020-05-04T06:28:04.959Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 06:28:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions" for Cloud Functions...
+[debug] [2020-05-04T06:28:06.424Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T06:28:06.424Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-04T06:28:06.424Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T06:28:06.425Z] [worker-~diagnostic~-f6ff339e-be91-4b54-ab2f-978510ac1998]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\17072 
+[debug] [2020-05-04T06:28:06.425Z] [worker-~diagnostic~-f6ff339e-be91-4b54-ab2f-978510ac1998]: BUSY 
+[debug] [2020-05-04T06:28:06.695Z] [runtime-status] [17072] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T06:28:06.695Z] [runtime-status] [17072] Disabled runtime features: undefined 
+[debug] [2020-05-04T06:28:06.698Z] [runtime-status] [17072] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T06:28:06.701Z] [runtime-status] [17072] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T06:28:06.702Z] [runtime-status] [17072] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T06:28:06.732Z] [runtime-status] [17072] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T06:28:06.732Z] [runtime-status] [17072] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T06:28:06.733Z] [runtime-status] [17072] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T06:28:06.734Z] [runtime-status] [17072] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T06:28:06.734Z] [runtime-status] [17072] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T06:28:06.735Z] [runtime-status] [17072] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[info] +  functions[addAdminRole]: http function initialized (http://localhost:5001/medplus-new/us-central1/addAdminRole).
+[debug] [2020-05-04T06:28:06.737Z] [worker-~diagnostic~-f6ff339e-be91-4b54-ab2f-978510ac1998]: IDLE 
+[debug] [2020-05-04T07:17:09.406Z] File C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\index.js changed, reloading triggers 
+[debug] [2020-05-04T07:17:10.408Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-04T07:17:10.409Z] [worker-~diagnostic~-f6ff339e-be91-4b54-ab2f-978510ac1998]: FINISHING 
+[debug] [2020-05-04T07:17:10.419Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T07:17:10.419Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-04T07:17:10.419Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T07:17:10.419Z] [worker-~diagnostic~-11fadc1b-3e58-4d50-8646-a2f1f9ded4e4]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\14900 
+[debug] [2020-05-04T07:17:10.419Z] [worker-~diagnostic~-11fadc1b-3e58-4d50-8646-a2f1f9ded4e4]: BUSY 
+[debug] [2020-05-04T07:17:10.420Z] [worker-~diagnostic~-f6ff339e-be91-4b54-ab2f-978510ac1998]: exited 
+[debug] [2020-05-04T07:17:10.420Z] [worker-~diagnostic~-f6ff339e-be91-4b54-ab2f-978510ac1998]: FINISHED 
+[debug] [2020-05-04T07:17:10.701Z] [runtime-status] [14900] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T07:17:10.703Z] [runtime-status] [14900] Disabled runtime features: undefined 
+[debug] [2020-05-04T07:17:10.707Z] [runtime-status] [14900] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:10.708Z] [runtime-status] [14900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:10.709Z] [runtime-status] [14900] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T07:17:10.740Z] [runtime-status] [14900] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T07:17:10.741Z] [runtime-status] [14900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:10.742Z] [runtime-status] [14900] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:10.742Z] [runtime-status] [14900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:10.742Z] [runtime-status] [14900] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T07:17:10.744Z] [runtime-status] [14900] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[debug] [2020-05-04T07:17:10.745Z] [worker-~diagnostic~-11fadc1b-3e58-4d50-8646-a2f1f9ded4e4]: IDLE 
+[debug] [2020-05-04T07:17:42.817Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T07:17:42.818Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-04T07:17:42.819Z] CLI Version:   8.2.0
+[debug] [2020-05-04T07:17:42.819Z] Platform:      win32
+[debug] [2020-05-04T07:17:42.819Z] Node Version:  v12.16.3
+[debug] [2020-05-04T07:17:42.819Z] Time:          Mon May 04 2020 03:17:42 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-04T07:17:42.819Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T07:17:42.819Z] 
+[debug] [2020-05-04T07:17:42.825Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-04T07:17:42.825Z] > authorizing via signed-in user
+[debug] [2020-05-04T07:17:42.825Z] [iam] checking project medplus-new for permissions ["firebase.projects.get"]
+[debug] [2020-05-04T07:17:42.827Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-04T07:17:42.827Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-04T07:17:43.002Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 07:17:42 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T07:17:43.012Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/medplus-new:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-04T07:17:43.184Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 07:17:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=42","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T07:17:43.186Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new  
+ 
+[debug] [2020-05-04T07:17:43.493Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 07:17:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions'...
+[info] 
+[debug] [2020-05-04T07:17:43.497Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new/webApps/-/config  
+ 
+[debug] [2020-05-04T07:17:44.031Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 07:17:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions" for Cloud Functions...
+[debug] [2020-05-04T07:17:45.521Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T07:17:45.521Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-04T07:17:45.522Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T07:17:45.522Z] [worker-~diagnostic~-aa331d8a-71dc-416f-93a3-b82241e8148f]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\19060 
+[debug] [2020-05-04T07:17:45.522Z] [worker-~diagnostic~-aa331d8a-71dc-416f-93a3-b82241e8148f]: BUSY 
+[debug] [2020-05-04T07:17:45.782Z] [runtime-status] [19060] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T07:17:45.783Z] [runtime-status] [19060] Disabled runtime features: undefined 
+[debug] [2020-05-04T07:17:45.785Z] [runtime-status] [19060] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:45.786Z] [runtime-status] [19060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:45.789Z] [runtime-status] [19060] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T07:17:45.818Z] [runtime-status] [19060] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T07:17:45.818Z] [runtime-status] [19060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:45.819Z] [runtime-status] [19060] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:45.820Z] [runtime-status] [19060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:17:45.820Z] [runtime-status] [19060] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T07:17:45.821Z] [runtime-status] [19060] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[info] +  functions[addAdminRole]: http function initialized (http://localhost:5001/medplus-new/us-central1/addAdminRole).
+[debug] [2020-05-04T07:17:45.823Z] [worker-~diagnostic~-aa331d8a-71dc-416f-93a3-b82241e8148f]: IDLE 
+[debug] [2020-05-04T07:20:30.862Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T07:20:30.864Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-04T07:20:30.864Z] CLI Version:   8.2.0
+[debug] [2020-05-04T07:20:30.864Z] Platform:      win32
+[debug] [2020-05-04T07:20:30.864Z] Node Version:  v12.16.3
+[debug] [2020-05-04T07:20:30.864Z] Time:          Mon May 04 2020 03:20:30 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-04T07:20:30.864Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T07:20:30.864Z] 
+[debug] [2020-05-04T07:20:30.870Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-04T07:20:30.870Z] > authorizing via signed-in user
+[debug] [2020-05-04T07:20:30.870Z] [iam] checking project medplus-new for permissions ["firebase.projects.get"]
+[debug] [2020-05-04T07:20:30.872Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/medplus-new:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-04T07:20:31.043Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 07:20:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=60","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T07:20:31.047Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new  
+ 
+[debug] [2020-05-04T07:20:31.306Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 07:20:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions'...
+[info] 
+[debug] [2020-05-04T07:20:31.318Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new/webApps/-/config  
+ 
+[debug] [2020-05-04T07:20:31.721Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 07:20:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions" for Cloud Functions...
+[debug] [2020-05-04T07:20:33.348Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T07:20:33.349Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-04T07:20:33.349Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T07:20:33.349Z] [worker-~diagnostic~-3ad9cb8e-0fe4-4ad0-a75b-fe5e21b905fb]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\3320 
+[debug] [2020-05-04T07:20:33.349Z] [worker-~diagnostic~-3ad9cb8e-0fe4-4ad0-a75b-fe5e21b905fb]: BUSY 
+[debug] [2020-05-04T07:20:33.616Z] [runtime-status] [3320] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T07:20:33.617Z] [runtime-status] [3320] Disabled runtime features: undefined 
+[debug] [2020-05-04T07:20:33.619Z] [runtime-status] [3320] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T07:20:33.622Z] [runtime-status] [3320] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:20:33.623Z] [runtime-status] [3320] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T07:20:33.652Z] [runtime-status] [3320] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T07:20:33.652Z] [runtime-status] [3320] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:20:33.653Z] [runtime-status] [3320] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T07:20:33.654Z] [runtime-status] [3320] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:20:33.654Z] [runtime-status] [3320] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T07:20:33.655Z] [runtime-status] [3320] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[info] +  functions[addAdminRole]: http function initialized (http://localhost:5001/medplus-new/us-central1/addAdminRole).
+[debug] [2020-05-04T07:20:33.657Z] [worker-~diagnostic~-3ad9cb8e-0fe4-4ad0-a75b-fe5e21b905fb]: IDLE 
+[debug] [2020-05-04T07:22:28.828Z] File C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\index.js changed, reloading triggers 
+[debug] [2020-05-04T07:22:29.828Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-04T07:22:29.828Z] [worker-~diagnostic~-3ad9cb8e-0fe4-4ad0-a75b-fe5e21b905fb]: FINISHING 
+[debug] [2020-05-04T07:22:29.840Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T07:22:29.840Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-04T07:22:29.840Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T07:22:29.841Z] [worker-~diagnostic~-a77a04dd-9110-4558-9f6d-c8cde6ccc28b]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\17508 
+[debug] [2020-05-04T07:22:29.841Z] [worker-~diagnostic~-a77a04dd-9110-4558-9f6d-c8cde6ccc28b]: BUSY 
+[debug] [2020-05-04T07:22:29.843Z] [worker-~diagnostic~-3ad9cb8e-0fe4-4ad0-a75b-fe5e21b905fb]: exited 
+[debug] [2020-05-04T07:22:29.843Z] [worker-~diagnostic~-3ad9cb8e-0fe4-4ad0-a75b-fe5e21b905fb]: FINISHED 
+[debug] [2020-05-04T07:22:30.122Z] [runtime-status] [17508] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T07:22:30.124Z] [runtime-status] [17508] Disabled runtime features: undefined 
+[debug] [2020-05-04T07:22:30.126Z] [runtime-status] [17508] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T07:22:30.129Z] [runtime-status] [17508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:22:30.130Z] [runtime-status] [17508] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T07:22:30.159Z] [runtime-status] [17508] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T07:22:30.160Z] [runtime-status] [17508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:22:30.161Z] [runtime-status] [17508] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T07:22:30.161Z] [runtime-status] [17508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T07:22:30.162Z] [runtime-status] [17508] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T07:22:30.163Z] [runtime-status] [17508] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[debug] [2020-05-04T07:22:30.164Z] [worker-~diagnostic~-a77a04dd-9110-4558-9f6d-c8cde6ccc28b]: IDLE 
+[debug] [2020-05-04T08:27:06.263Z] File C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\index.js changed, reloading triggers 
+[debug] [2020-05-04T08:27:07.274Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-04T08:27:07.275Z] [worker-~diagnostic~-a77a04dd-9110-4558-9f6d-c8cde6ccc28b]: FINISHING 
+[debug] [2020-05-04T08:27:07.279Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-04T08:27:07.305Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T08:27:07.305Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-04T08:27:07.305Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T08:27:07.306Z] [worker-~diagnostic~-d77eb4a9-3e38-4be4-8061-6d7e7f6466b8]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\16164 
+[debug] [2020-05-04T08:27:07.307Z] [worker-~diagnostic~-d77eb4a9-3e38-4be4-8061-6d7e7f6466b8]: BUSY 
+[debug] [2020-05-04T08:27:07.308Z] [worker-~diagnostic~-a77a04dd-9110-4558-9f6d-c8cde6ccc28b]: exited 
+[debug] [2020-05-04T08:27:07.308Z] [worker-~diagnostic~-a77a04dd-9110-4558-9f6d-c8cde6ccc28b]: FINISHED 
+[debug] [2020-05-04T08:27:07.627Z] [runtime-status] [16164] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T08:27:07.629Z] [runtime-status] [16164] Disabled runtime features: undefined 
+[debug] [2020-05-04T08:27:07.632Z] [runtime-status] [16164] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T08:27:07.636Z] [runtime-status] [16164] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:27:07.638Z] [runtime-status] [16164] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T08:27:07.671Z] [runtime-status] [16164] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T08:27:07.672Z] [runtime-status] [16164] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:27:07.673Z] [runtime-status] [16164] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T08:27:07.673Z] [runtime-status] [16164] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:27:07.673Z] [runtime-status] [16164] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T08:27:07.674Z] [runtime-status] [16164] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[info] +  functions[addRequest]: http function initialized (http://localhost:5001/medplus-new/us-central1/addRequest).
+[debug] [2020-05-04T08:27:07.677Z] [worker-~diagnostic~-d77eb4a9-3e38-4be4-8061-6d7e7f6466b8]: IDLE 
+[debug] [2020-05-04T08:38:01.839Z] File C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\index.js changed, reloading triggers 
+[debug] [2020-05-04T08:38:02.846Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-04T08:38:02.847Z] [worker-~diagnostic~-d77eb4a9-3e38-4be4-8061-6d7e7f6466b8]: FINISHING 
+[debug] [2020-05-04T08:38:02.848Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-04T08:38:02.862Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T08:38:02.863Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-04T08:38:02.863Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T08:38:02.863Z] [worker-~diagnostic~-9c174690-df50-4ec1-95f7-510e87e0346c]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\7888 
+[debug] [2020-05-04T08:38:02.864Z] [worker-~diagnostic~-9c174690-df50-4ec1-95f7-510e87e0346c]: BUSY 
+[debug] [2020-05-04T08:38:02.865Z] [worker-~diagnostic~-d77eb4a9-3e38-4be4-8061-6d7e7f6466b8]: exited 
+[debug] [2020-05-04T08:38:02.866Z] [worker-~diagnostic~-d77eb4a9-3e38-4be4-8061-6d7e7f6466b8]: FINISHED 
+[debug] [2020-05-04T08:38:03.202Z] [runtime-status] [7888] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T08:38:03.203Z] [runtime-status] [7888] Disabled runtime features: undefined 
+[debug] [2020-05-04T08:38:03.206Z] [runtime-status] [7888] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T08:38:03.209Z] [runtime-status] [7888] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:38:03.210Z] [runtime-status] [7888] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T08:38:03.243Z] [runtime-status] [7888] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T08:38:03.244Z] [runtime-status] [7888] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:38:03.245Z] [runtime-status] [7888] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T08:38:03.245Z] [runtime-status] [7888] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:38:03.245Z] [runtime-status] [7888] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T08:38:03.246Z] [runtime-status] [7888] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[debug] [2020-05-04T08:38:03.247Z] [worker-~diagnostic~-9c174690-df50-4ec1-95f7-510e87e0346c]: IDLE 
+[debug] [2020-05-04T08:42:49.457Z] File C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\index.js changed, reloading triggers 
+[debug] [2020-05-04T08:42:50.459Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-04T08:42:50.460Z] [worker-~diagnostic~-9c174690-df50-4ec1-95f7-510e87e0346c]: FINISHING 
+[debug] [2020-05-04T08:42:50.460Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-04T08:42:50.470Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T08:42:50.470Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-04T08:42:50.470Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T08:42:50.470Z] [worker-~diagnostic~-c2b80140-7379-437d-a42a-85f5d3928f4d]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\7396 
+[debug] [2020-05-04T08:42:50.470Z] [worker-~diagnostic~-c2b80140-7379-437d-a42a-85f5d3928f4d]: BUSY 
+[debug] [2020-05-04T08:42:50.471Z] [worker-~diagnostic~-9c174690-df50-4ec1-95f7-510e87e0346c]: exited 
+[debug] [2020-05-04T08:42:50.471Z] [worker-~diagnostic~-9c174690-df50-4ec1-95f7-510e87e0346c]: FINISHED 
+[debug] [2020-05-04T08:42:50.851Z] [runtime-status] [7396] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T08:42:50.852Z] [runtime-status] [7396] Disabled runtime features: undefined 
+[debug] [2020-05-04T08:42:50.857Z] [runtime-status] [7396] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T08:42:50.858Z] [runtime-status] [7396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:42:50.859Z] [runtime-status] [7396] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T08:42:50.889Z] [runtime-status] [7396] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T08:42:50.889Z] [runtime-status] [7396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:42:50.890Z] [runtime-status] [7396] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T08:42:50.890Z] [runtime-status] [7396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T08:42:50.890Z] [runtime-status] [7396] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T08:42:50.892Z] [runtime-status] [7396] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[debug] [2020-05-04T08:42:50.893Z] [worker-~diagnostic~-c2b80140-7379-437d-a42a-85f5d3928f4d]: IDLE 
+[debug] [2020-05-04T09:47:06.419Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T09:47:06.421Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-04T09:47:06.421Z] CLI Version:   8.2.0
+[debug] [2020-05-04T09:47:06.421Z] Platform:      win32
+[debug] [2020-05-04T09:47:06.422Z] Node Version:  v12.16.3
+[debug] [2020-05-04T09:47:06.422Z] Time:          Mon May 04 2020 05:47:06 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-04T09:47:06.422Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T09:47:06.422Z] 
+[debug] [2020-05-04T09:47:06.428Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-04T09:47:06.429Z] > authorizing via signed-in user
+[debug] [2020-05-04T09:47:06.429Z] [iam] checking project medplus-new for permissions ["firebase.projects.get"]
+[debug] [2020-05-04T09:47:06.431Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-04T09:47:06.431Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-04T09:47:06.616Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 09:47:05 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T09:47:06.631Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/medplus-new:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-04T09:47:07.189Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 09:47:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=45","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T09:47:07.191Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new  
+ 
+[debug] [2020-05-04T09:47:07.629Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 09:47:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions'...
+[info] 
+[debug] [2020-05-04T09:47:07.641Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new/webApps/-/config  
+ 
+[debug] [2020-05-04T09:47:08.141Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 09:47:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions" for Cloud Functions...
+[debug] [2020-05-04T09:47:09.730Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T09:47:09.731Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-04T09:47:09.731Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T09:47:09.732Z] [worker-~diagnostic~-26ac7f92-c099-419e-9aea-226bbbc6f66a]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\6612 
+[debug] [2020-05-04T09:47:09.733Z] [worker-~diagnostic~-26ac7f92-c099-419e-9aea-226bbbc6f66a]: BUSY 
+[debug] [2020-05-04T09:47:10.011Z] [runtime-status] [6612] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T09:47:10.012Z] [runtime-status] [6612] Disabled runtime features: undefined 
+[debug] [2020-05-04T09:47:10.016Z] [runtime-status] [6612] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T09:47:10.017Z] [runtime-status] [6612] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T09:47:10.019Z] [runtime-status] [6612] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T09:47:10.047Z] [runtime-status] [6612] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T09:47:10.048Z] [runtime-status] [6612] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T09:47:10.048Z] [runtime-status] [6612] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T09:47:10.049Z] [runtime-status] [6612] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T09:47:10.049Z] [runtime-status] [6612] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T09:47:10.050Z] [runtime-status] [6612] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[info] +  functions[addAdminRole]: http function initialized (http://localhost:5001/medplus-new/us-central1/addAdminRole).
+[debug] [2020-05-04T09:47:10.052Z] [worker-~diagnostic~-26ac7f92-c099-419e-9aea-226bbbc6f66a]: IDLE 
+[debug] [2020-05-04T13:06:04.170Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T13:06:04.172Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Michael Harris\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-04T13:06:04.172Z] CLI Version:   8.2.0
+[debug] [2020-05-04T13:06:04.172Z] Platform:      win32
+[debug] [2020-05-04T13:06:04.172Z] Node Version:  v12.16.3
+[debug] [2020-05-04T13:06:04.173Z] Time:          Mon May 04 2020 09:06:04 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-04T13:06:04.173Z] ----------------------------------------------------------------------
+[debug] [2020-05-04T13:06:04.173Z] 
+[debug] [2020-05-04T13:06:04.178Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-04T13:06:04.179Z] > authorizing via signed-in user
+[debug] [2020-05-04T13:06:04.179Z] [iam] checking project medplus-new for permissions ["firebase.projects.get"]
+[debug] [2020-05-04T13:06:04.181Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-04T13:06:04.181Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-04T13:06:04.373Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 13:06:03 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T13:06:04.385Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/medplus-new:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-04T13:06:04.558Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 13:06:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=46","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-04T13:06:04.559Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new  
+ 
+[debug] [2020-05-04T13:06:04.809Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 13:06:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions'...
+[info] 
+[debug] [2020-05-04T13:06:04.822Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/medplus-new/webApps/-/config  
+ 
+[debug] [2020-05-04T13:06:05.255Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 04 May 2020 13:06:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions" for Cloud Functions...
+[debug] [2020-05-04T13:06:06.869Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-04T13:06:06.870Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-04T13:06:06.870Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-04T13:06:06.870Z] [worker-~diagnostic~-bef320c9-6751-4d2f-9a8d-5e9a6a7530c5]: Assigning socketPath: \\?\pipe\C:\Users\Michael Harris\Documents\medplusdatabase\firebase-functions\functions\18396 
+[debug] [2020-05-04T13:06:06.871Z] [worker-~diagnostic~-bef320c9-6751-4d2f-9a8d-5e9a6a7530c5]: BUSY 
+[debug] [2020-05-04T13:06:07.146Z] [runtime-status] [18396] Functions runtime initialized. {"cwd":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-04T13:06:07.147Z] [runtime-status] [18396] Disabled runtime features: undefined 
+[debug] [2020-05-04T13:06:07.150Z] [runtime-status] [18396] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T13:06:07.152Z] [runtime-status] [18396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T13:06:07.154Z] [runtime-status] [18396] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-04T13:06:07.183Z] [runtime-status] [18396] Checked functions.config() {"config":{}} 
+[debug] [2020-05-04T13:06:07.183Z] [runtime-status] [18396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T13:06:07.184Z] [runtime-status] [18396] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-04T13:06:07.184Z] [runtime-status] [18396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-04T13:06:07.185Z] [runtime-status] [18396] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"C:\\Users\\Michael Harris\\Documents\\medplusdatabase\\firebase-functions\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-04T13:06:07.186Z] [runtime-status] [18396] initializeApp(DEFAULT) {"databaseURL":"https://medplus-new.firebaseio.com","storageBucket":"medplus-new.appspot.com","projectId":"medplus-new"} 
+[info] +  functions[addAdminRole]: http function initialized (http://localhost:5001/medplus-new/us-central1/addAdminRole).
+[debug] [2020-05-04T13:06:07.188Z] [worker-~diagnostic~-bef320c9-6751-4d2f-9a8d-5e9a6a7530c5]: IDLE 
